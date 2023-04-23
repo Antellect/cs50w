@@ -1,3 +1,2 @@
 # cs50w
-cs50 web programming 
-Test
+cs50 web programming
