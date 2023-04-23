@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+            #top_nav{
+            
+            padding-right:20px;
+            }
+            a{
+            color:black;
+            text-decoration: none;
+            padding:20px;
+            font-family: Arial, sans-serif;
+            font-size:16px;
+            float:right;
+            }
+            a:hover{
+            text-decoration: underline;
+            }
+            #logo{
+                padding-left:20px;
+                padding-top:20px;
+            }
+            h2{
+                font-family: Arial, sans-serif;
+                color:rgb(203, 0, 0);
+                padding-left: 40px;
+                padding-top: 20px;
+                text-decoration: none;
+                font-weight:normal;
+            }
+            hr{
+                color:rgb(179, 179, 179)
+            }
+            h3{
+                font-family: Arial, sans-serif;
+                color:rgb(0, 0, 0);
+                padding-left: 40px;
+                padding-top: 20px;
+                margin-bottom:40px;
+                text-decoration: none;
+                font-weight:normal;  
+            }
+            ul{
+                list-style-type: none;
+                font-family: Arial, sans-serif;
+            }
+            li{
+                margin-top: 30px;
+            
+            }
+            #container {
+                width: 1500px;
+                background-color: #ffffff;
+                margin: auto;
+                float:left;
+            }
+            #input_text{
+                width:250px;
+                float:left;
+                height: 300px;
+                background-color: rgb(255, 255, 255);
+            }
+            #search_bars{
+                width: 600px;
+                float: left;
+                height: 300px;
+                background-color: rgb(255, 255, 255);
+                
+            }
+            ul{
+                margin-top:0;
+                
+            }
+            .bar{
+                height:25px;
+                width:570px;
+                margin-top:0px;
+                margin-bottom:10px;
+                display:block;
+            }
+            li{
+                margin-top:0px;
+                margin-bottom:25px;
+            }
+            #button{
+                float:right;
+                margin-right:24px;
+                margin-top: 24px;
+                height:30px;
+                font-family: Arial, sans-serif;
+                color:#ffffff;
+                background-color:rgb(39, 39, 250);
+                border:1px solid rgb(39, 39, 250);
+                border-radius: 2px;
+            }
+            #button:hover{
+                opacity:0.7;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+
+       
+        <div id="top_nav">
+            <img src="Google_logo.png" alt="Google" width="125" id="logo">
+            <a href="index.html">Google Home</a>    
+        </div>
+        
+
+        <h2>Advanced Search</h2>
+
+        <hr>
+
+        <h3>Find pages with...</h3>
+        
+        <div id="container">
+            <div id="input_text">
+                <ul>
+                    <li>all these words:</li>
+                    <li>this exact word or phrase:</li>
+                    <li>any of these words:</li>
+                    <li>none of these words:</li>
+                </ul>
+            </div>
+            <div id="search_bars">
+                <form action="https://google.com/search">
+                    <input type="text" name="as_q" class="bar">
+                    <input type="text" name="as_epq" class="bar">
+                    <input type="text" name="as_oq" class="bar">
+                    <input type="text" name="as_eq" class="bar">
+                    <input type="submit" value="Advanced Search" id="button">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

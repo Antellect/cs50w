@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+         
+       
+        #search_bar{
+            width:550px;
+            height:44px;
+            border: 1px #808080 solid;
+            border-radius: 30px;
+            padding-left:50px;
+            background-image: url('icons8-search-30.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            font-size:16px;
+            
+        }
+        form{
+            text-align: center;
+            align-items: center;
+
+        }
+        img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            padding-top:200px;
+            padding-bottom:50px;
+        }
+        #top_nav{
+            text-align: right;
+            padding-right:20px;
+            padding-top: 20px;
+        }
+     
+
+        .buttons{
+            background-color:rgb(241, 241, 241);
+            width: 160px;
+            height:45px;
+            font-family: Arial, sans-serif;
+            font-size:14px;
+            color:#454545;
+            border:none;
+            display:inline-block;
+            margin-left:5px;
+            margin-right:5px;
+           
+        }
+        .buttons:hover{
+            border-style:groove;
+            border-radius: 0.5px;
+            border-color:black;
+        }
+        #button_wrapper{
+            padding-top:55px;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+            padding:20px;
+            font-family: Arial, sans-serif;
+            font-size:16px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="top_nav">
+            <a href="advanced.html">Advanced Search</a>
+            <a href="image.html">Image Search</a>
+        </div>
+
+
+        <img src="Google_logo.png" alt="Google" width="300"class="center">
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" id="search_bar" placeholder="Search Google or type a URL">
+            <div id="button_wrapper">
+                <input type="submit" value="Google Search" class="buttons">
+                <input type="submit" value="I'm Feeling Lucky" class="buttons"name="btnI">
+            </div>
+        </form>
+        
+    
+       
+
+
+    </body>
+</html>
